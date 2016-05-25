@@ -42,6 +42,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_islower(int c);
+int		ft_isnegative(int n);
 int		ft_isupper(int c);
 int		ft_isprint(int c);
 int		ft_memcmp(void *s1, void *s2, size_t n);
