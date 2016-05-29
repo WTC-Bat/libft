@@ -7,7 +7,7 @@ char	*ft_prependc(char *str, int c)
 	int		cnt;
 	char	*out_str;
 
-	len = ft_strlen(str) + 1;	//?
+	len = ft_strlen(str) + 1;
 	cnt = 1;
 	out_str = (char *)malloc(sizeof(char) * len);
 	out_str[0] = c;
