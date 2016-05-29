@@ -54,6 +54,7 @@ int		ft_strncmp(char const *s1, char const*s2, size_t n);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 size_t	ft_strlcat(char *dst, char *src, size_t size);
 size_t	ft_strlen(char const *str);
+size_t	ft_wcslen(const wchar_t *wcs);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *dst, void *src, int c, size_t n);
