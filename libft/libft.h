@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 char	*ft_itoa(int n);
+char	*ft_prependc(char *str, int c);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(char *s, int c);
 char	*ft_strcmp(char *s1, char *s2);
@@ -37,6 +38,8 @@ char	*ft_strtrim(char const *s);
 char	ft_tolower(int c);
 char	ft_toupper(int c);
 int		ft_atoi(char *str);
+int		ft_indexof(char const *str, int c);
+int		ft_lindexof(char const *str, int c);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
