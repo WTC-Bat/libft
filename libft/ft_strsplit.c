@@ -6,11 +6,15 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/15 15:16:03 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/05/15 15:30:30 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/05/31 17:15:59 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	malloc strs
+*/
 
 char	**ft_strsplit(char const *s, char c)
 {
@@ -24,7 +28,6 @@ char	**ft_strsplit(char const *s, char c)
 	start = 0;
 	end = 0;
 	strcnt = 0;
-	strs = (char **)malloc(sizeof(char **));
 	while (s[scnt])
 	{
 		if (s[scnt] == c)
