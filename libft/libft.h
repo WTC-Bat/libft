@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 11:00:25 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/05/15 16:39:26 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/06/03 14:11:50 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 
 char	*ft_itoa(int n);
+char	*ft_itobase(int n, int base);
 char	*ft_prependc(char *str, int c);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(char *s, int c);
@@ -31,6 +32,7 @@ char	*ft_strncpy(char *dest, char *src, size_t n);
 char	*ft_strnew(size_t size);
 char	*ft_strnstr(char *big, char *little, size_t len);
 char	*ft_strrchr(char *s, int c);
+char	*ft_strrev(char const *str);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strstr(char *str, char *to_find);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
