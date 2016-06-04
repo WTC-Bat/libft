@@ -16,7 +16,8 @@ SRCS = ./ft_itoa.c ./ft_itobase.c ./ft_strcat.c ./ft_strchr.c ./ft_strcmp.c \
 		./ft_putnbr.c ./ft_putnbr_fd.c ./ft_putstr.c ./ft_putstr_fd.c \
 		./ft_strclr.c ./ft_strdel.c ./ft_striter.c ./ft_striteri.c \
 		./ft_isupper.c ./ft_islower.c ./ft_indexof.c ./ft_lindexof.c \
-		./ft_isnegative.c ./ft_prependc.c ./ft_wcslen.c ./ft_strrev.c
+		./ft_isnegative.c ./ft_prependc.c ./ft_wcslen.c ./ft_strrev.c \
+		./ft_strlower.c ./ft_strupper.c
 
 OBJS = ./ft_itoa.o ./ft_itobase.o ./ft_strcat.o ./ft_strchr.o ./ft_strcmp.o \
 	   	./ft_strcpy.o ./ft_strdup.o ./ft_strjoin.o ./ft_strmap.o ./ft_strmapi.o \
@@ -32,7 +33,8 @@ OBJS = ./ft_itoa.o ./ft_itobase.o ./ft_strcat.o ./ft_strchr.o ./ft_strcmp.o \
 		./ft_putnbr.o ./ft_putnbr_fd.o ./ft_putstr.o ./ft_putstr_fd.o \
 		./ft_strclr.o ./ft_strdel.o ./ft_striter.o ./ft_striteri.o \
 		./ft_isupper.o ./ft_islower.o ./ft_indexof.o ./ft_lindexof.o \
-		./ft_isnegative.o ./ft_prependc.o ./ft_wcslen.o ./ft_strrev.o
+		./ft_isnegative.o ./ft_prependc.o ./ft_wcslen.o ./ft_strrev.o \
+		./ft_strlower.o ./ft_strupper.o
 
 all: $(NAME)
 
