@@ -12,29 +12,28 @@
 
 #include "libft.h"
 
-char    *ft_itobase(int n, int base)
+char	*ft_itobase(int n, int base)
 {
-    char    basechars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char    *baseout;
-	char	*tmp;
-    int     rem;
-	int 	cnt;
-    int     i;
+    char	basechars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    char	*tmp;
+	char	*baseout;
+    int		rem;
+	int		cnt;
+    int		i;
     
     rem = n;
 	cnt = 0;
 	i = 0;
-    baseout = (char *)malloc(sizeof(char) * 64);
-	tmp = (char *)malloc(sizeof(baseout));
+    tmp = (char *)malloc(sizeof(char) * 64);
+	baseout = (char *)malloc(sizeof(tmp));
     while (rem > 0)
     {
         i = rem % base;
         rem = rem / base;
-		baseout[cnt] = basechars[i];
+		tmp[cnt] = basechars[i];
 		cnt++;
     }
-	tmp = ft_strrev(baseout);
-	tmp[cnt] = '\0';
-	return (tmp);
-    //return (ft_strrev(baseout));
+	baseout = ft_strrev(tmp);
+	baseout[cnt] = '\0';
+	return (baseout);
 }
