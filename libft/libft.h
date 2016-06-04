@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+char	*ft_appendc(char *str, int c);
 char	*ft_itoa(int n);
 char	*ft_itobase(int n, int base);
 char	*ft_prependc(char *str, int c);
