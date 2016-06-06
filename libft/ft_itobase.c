@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/03 14:41:32 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/06/03 14:43:00 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/06/06 13:09:30 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,23 @@
 
 char	*ft_itobase(int n, int base)
 {
-    char	basechars[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char	*tmp;
+	char	*basechars;
+	char	*tmp;
 	char	*baseout;
-    int		rem;
 	int		cnt;
-    int		i;
-    
-    rem = n;
+	int		i;
+
+	basechars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	cnt = 0;
-	i = 0;
-    tmp = (char *)malloc(sizeof(char) * 64);
+	tmp = (char *)malloc(sizeof(char) * 64);
 	baseout = (char *)malloc(sizeof(tmp));
-    while (rem > 0)
-    {
-        i = rem % base;
-        rem = rem / base;
+	while (n > 0)
+	{
+		i = n % base;
+		n = n / base;
 		tmp[cnt] = basechars[i];
 		cnt++;
-    }
+	}
 	baseout = ft_strrev(tmp);
 	baseout[cnt] = '\0';
 	return (baseout);
