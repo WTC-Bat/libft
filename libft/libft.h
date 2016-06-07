@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 11:00:25 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/06/07 16:24:55 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/06/07 17:01:20 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
+# include "ft_printf/includes/ft_printf.h"
 
 # define BUFF_SIZE 32
 
