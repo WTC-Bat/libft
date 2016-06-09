@@ -8,3 +8,8 @@ a.out
 ._*
 .Trashes
 .Spotlight*
+
+# Test Files
+tst.c
+tst*.c
+*tst.c
