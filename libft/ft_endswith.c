@@ -13,7 +13,7 @@ int		ft_endswith(char *str, char* end)
 	ecnt = 0;
 	while (cnt < strlen)
 	{
-		if (strlen[cnt] != endlen[ecnt])
+		if (str[cnt] != end[ecnt])
 			return (0);
 		cnt++;
 		ecnt++;
