@@ -20,7 +20,7 @@ char	*ft_strrev(char const *str)
 
 	cnt = 0;
 	len = ft_strlen(str) - 1;
-	revstring = (char *)malloc(sizeof(char) * len + 1);
+	revstring = (char *)malloc(sizeof(char) * len + 2);
 	while (len != 0)
 	{
 		revstring[cnt] = str[len];

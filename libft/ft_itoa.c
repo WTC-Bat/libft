@@ -14,15 +14,15 @@
 
 char	*ft_itoa(int n)
 {
-	char	*c;
+	char	*istr;
 
-	c = (char *)malloc(sizeof(char) * 32);
+	istr = (char *)malloc(sizeof(char) * 32);
 	if (n >= 0)
 	{
 		while (n != 0)
 		{
-			c--;
-			*c = '0' + (n % 10);
+			istr--;
+			*istr = '0' + (n % 10);
 			n = n / 10;
 		}
 	}
@@ -30,12 +30,12 @@ char	*ft_itoa(int n)
 	{
 		while (n != 0)
 		{
-			c--;
-			*c = '0' - (n % 10);
+			istr--;
+			*istr = '0' - (n % 10);
 			n = n / 10;
 		}
-		*--c = '-';
+		*--istr = '-';
 	}
-	c[ft_strlen(c)] = '\0';
-	return (c);
+	istr[ft_strlen(istr)] = '\0';
+	return (istr);
 }

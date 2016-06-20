@@ -22,12 +22,13 @@ char	*ft_strtrim(char const *s)
 	start = 0;
 	cnt = 0;
 	end = ft_strlen(s) - 1;
-	str = (char *)malloc(sizeof(char) * end);
+	str = (char *)malloc(sizeof(char) * end + 2);
 	while (s[start] == ' ' || s[start] == '\n' || s[start] == '\t')
 		start++;
 	while (s[end] == ' ' || s[end] == '\n' || s[end] == '\t')
 		end--;
 	while (start <= end)
 		str[cnt++] = s[start++];
+	str[cnt] = '\0';
 	return (str);
 }
