@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../libft/libft.h"
 
 int		get_next_line(const int fd, char **line);
 
@@ -25,7 +25,7 @@ int		main(void)
 	get_next_line(fd2, l);
 	printf("%s\n", *l);
 	*/
-	
+
 
 	while (get_next_line(fd, &*l) != 0)
 	{
@@ -42,7 +42,7 @@ int		main(void)
 
 	/*
 	printf("gnl loop done");
-	
+
 	int stat = 1;
 	while (stat != 0)
 		stat = get_next_line(fd, *&l);

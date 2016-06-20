@@ -31,7 +31,6 @@ static char	*read_line(const int fd, int *status, int *exlen)
 			*status = 0;
 			return (NULL);
 		}
-		//free(b);
 	}
 	return (s);
 }
@@ -50,6 +49,5 @@ int			get_next_line(const int fd, char **line)
 		ln = ft_strnew(BUFF_SIZE + exlen);
 	ln = read_line(fd, &status, &exlen);
 	*line = ln;
-	free(ln);
 	return (status);
 }
