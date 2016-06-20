@@ -12,9 +12,22 @@
 
 #include "libft.h"
 
-/*
-**	malloc strs
-*/
+int		word_count(char const *str, char c)
+{
+	int		cnt;
+	int		wcnt;
+
+	cnt = 0;
+	wcnt = 0;
+	while (str[cnt] != '\0')
+	{
+		if (str[cnt] != c && (str[cnt + 1] == c ||
+			str[cnt + 1] == '\0'))
+			wcnt++;
+		cnt++;
+	}
+	return (wcnt);
+}
 
 char	**ft_strsplit(char const *s, char c)
 {
@@ -24,21 +37,20 @@ char	**ft_strsplit(char const *s, char c)
 	size_t	start;
 	size_t	end;
 
-	strs = NULL;
 	scnt = 0;
-	start = 0;
-	end = 0;
 	strcnt = 0;
-	while (s[scnt])
+	strs = (char **)malloc(sizeof(*strs) * (word_count(s, c) + 1));
+	while (s[scnt] != '\0')
 	{
-		if (s[scnt] == c)
+		if (s[scnt] != c)
 		{
-			if (s[scnt + 1] != c)
-				start = scnt + 1;
-			else if (s[scnt - 1] != c)
+			if (s[scnt - 1] == c || s[scnt - 1] == '\0')
+				start = scnt;
+			if (s[scnt + 1] == c || s[scnt + 1] == '\0')
 			{
-				end = end - start;
+				end = scnt - start + 1;
 				strs[strcnt] = ft_strsub(s, start, end);
+				strcnt++;
 			}
 		}
 		scnt++;
