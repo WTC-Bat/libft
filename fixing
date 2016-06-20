@@ -27,7 +27,7 @@ X	-	*ft_strncpy(char *dest, char *src, size_t n);
 X	-	*ft_strnstr(char *big, char *little, size_t len);
 X	-	*ft_strrchr(char *s, int c);
 X	-	*ft_strrev(char const *str);
-0	-	**ft_strsplit(char const *s, char c);
+X	-	**ft_strsplit(char const *s, char c);
 X	-	*ft_strstr(char *str, char *to_find);
 X	-	*ft_strsub(char const *s, unsigned int start, size_t len);
 X	-	*ft_strtrim(char const *s);
