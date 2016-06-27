@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_indexof(char const *str, int c)
+int		ft_indexof(char const *str, char c)
 {
 	int		cnt;
 
