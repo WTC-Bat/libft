@@ -58,7 +58,7 @@ int		ft_indexof(char const *str, char c);
 int		ft_lindexof(char const *str, char c);
 int		ft_isalnum(char c);
 int		ft_isalpha(char c);
-int		ft_isascii(char c);
+int		ft_isascii(int c);
 int		ft_isdigit(char c);
 int		ft_islower(char c);
 int		ft_isnegative(int n);
