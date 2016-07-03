@@ -21,5 +21,5 @@ int		ft_indexof(char const *str, char c)
 			return (cnt);
 		cnt++;
 	}
-	return (0);
+	return (-1);
 }
