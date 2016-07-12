@@ -17,7 +17,7 @@ int		ft_atoi(char *s)
 
 	cnt = 0;
 	out_int = 0;
-	while (s[cnt])
+	while (s[cnt] && s[cnt] > 47 && s[cnt] < 58)
 	{
 		out_int = out_int * 10 + (s[cnt] - '0');
 		cnt++;
