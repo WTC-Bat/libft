@@ -44,6 +44,7 @@ static char	*interpret(char *bytes, char *bf)
 			(*bytes)--;
 		else if (bf[cnt] == '.')
 		{
+			ft_putchar(*bytes);
 			bfstr[bfcnt] = *bytes;
 			bfcnt++;
 		}
@@ -165,7 +166,7 @@ char		*ft_bftostr(char *bf)
 	**init
 	*/
 	ft_memset(bytes, 0, 4096);
-	//init(bytes, 4096);
-	bfstr = interpret(bytes, bf);
+	//init(&bytes[0], 4096);
+	bfstr = interpret(&bytes[0], bf);
 	return (bfstr);
 }
