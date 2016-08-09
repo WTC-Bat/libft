@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/02 12:45:17 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/06/07 17:02:41 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/08/09 14:24:08 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-#include "../../libft.h"
+# include "../../libft.h"
 
 typedef struct	s_mods
 {

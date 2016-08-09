@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/03 14:41:32 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/06/06 13:09:30 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/08/09 14:21:07 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,14 @@ static int	set_nbr(int n)
 	return (nbr);
 }
 
-char	*ft_itobase(int n, int base)
+char		*ft_itobase(int n, int base)
 {
-	char	*basechars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char	*basechars;
 	char	*out;
 	int		nbr;
 	int		bc;
 
+	*basechars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	out = (char *)malloc(sizeof(char) * 32);
 	nbr = set_nbr(n);
 	bc = 0;

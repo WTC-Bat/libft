@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 10:22:47 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/05/09 10:22:50 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/08/09 14:18:46 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,4 @@ int		ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return (*(unsigned char *)s1 - *(unsigned char *)s2);
-	
 }

@@ -6,7 +6,7 @@
 /*   By: mvanwyk <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/15 15:08:41 by mvanwyk           #+#    #+#             */
-/*   Updated: 2016/05/15 15:08:44 by mvanwyk          ###   ########.fr       */
+/*   Updated: 2016/08/09 14:17:50 by mvanwyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	int		cnt;
 
 	if (s == NULL || f == NULL)
-		return;
+		return ;
 	cnt = 0;
 	while (s[cnt] != '\0')
 	{
