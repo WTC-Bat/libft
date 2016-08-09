@@ -42,7 +42,7 @@ char		*ft_itobase(int n, int base)
 	int		nbr;
 	int		bc;
 
-	*basechars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	basechars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	out = (char *)malloc(sizeof(char) * 32);
 	nbr = set_nbr(n);
 	bc = 0;
