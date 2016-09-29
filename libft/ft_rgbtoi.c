@@ -1,4 +1,4 @@
-int		rgbtoi(int red, int green, int blue)
+int		ft_rgbtoi(int red, int green, int blue)
 {
 	int		r;
 	int		g;

@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int		*itorgb(int rgbint)
+int		*ft_itorgb(int rgbint)
 {
 	//	if rgbint < 0?
 	//	if rgbint > x?
