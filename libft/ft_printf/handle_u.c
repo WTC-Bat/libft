@@ -59,10 +59,10 @@ static char	*get_value_2(va_list vlst, t_mods mods, int fmtl_len)
 static char	*get_value(va_list vlst, t_mods mods, int fmtl_len)
 {
 	unsigned long int	ulint;
-	unsigned int		uint;
+	unsigned int		unint;
 
 	ulint = 0;
-	uint = 0;
+	unint = 0;
 	if (fmtl_len > 3)
 		return ("ERROR: too many length modifiers");
 	if (mods.fmtl[fmtl_len - 1] == 'U' || mods.fmtl[fmtl_len - 2] == 'l')
@@ -72,8 +72,8 @@ static char	*get_value(va_list vlst, t_mods mods, int fmtl_len)
 	}
 	else if (mods.fmtl[fmtl_len - 2] == 'j')
 	{
-		uint = va_arg(vlst, unsigned int);
-		return (ft_itoa(uint));
+		unint = va_arg(vlst, unsigned int);
+		return (ft_itoa(unint));
 	}
 	else
 		return (get_value_2(vlst, mods, fmtl_len));

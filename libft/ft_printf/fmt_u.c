@@ -35,6 +35,7 @@ static char	*do_precision(char *new_str, char *pad, char *out_str, t_mods mods)
 	else
 		new_str = ft_strjoin(pad, out_str);
 	new_str[ft_strlen(new_str)] = '\0';
+	// free(pad);
 	return (new_str);
 }
 
@@ -51,6 +52,7 @@ static char	*do_width(char *new_str, char *pad, char *out_str, t_mods mods)
 		new_str = ft_strjoin(out_str, pad);
 	else
 		new_str = ft_strjoin(pad, out_str);
+	// free(pad);
 	return (new_str);
 }
 

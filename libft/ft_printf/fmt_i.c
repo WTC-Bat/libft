@@ -101,5 +101,6 @@ char		*fmt_i(t_mods mods, char *out_str)
 	}
 	else
 		new_str = do_flags(out_str, mods);
+	// free(pad);
 	return (new_str);
 }
