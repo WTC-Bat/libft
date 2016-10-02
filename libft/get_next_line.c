@@ -41,13 +41,15 @@ int			get_next_line(const int fd, char **line)
 	int			status;
 	static int	exlen;
 
-	ln = "";
+	// ln = "";
 	status = 1;
 	if (fd < 0)
 		return (-1);
-	if (ln != NULL)
-		ln = ft_strnew(BUFF_SIZE + exlen);
+	// if (ln != NULL)
+	// 	ln = ft_strnew(BUFF_SIZE + exlen);
 	ln = read_line(fd, &status, &exlen);
 	*line = ln;
+	//*line = ft_strdup(ln);
+	free(ln);
 	return (status);
 }
